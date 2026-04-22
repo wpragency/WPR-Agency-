@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPR Agency  - Jasa Press Release Terpercaya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #4a4a4a;
+        }
+
+        /* Color Scheme */
+        :root {
+            --white: #ffffff;
+            --cream: #f8f5f0;
+            --light-brown: #d4b896;
+            --brown-light: #e8d5b7;
+            --brown-medium: #b89c7a;
+            --brown-dark: #8b7355;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--brown-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--brown-dark);
+        }
+
+        .cta-btn {
+            background: var(--brown-medium);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: var(--brown-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--brown-light) 100%);
+            padding: 120px 2rem 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--brown-dark);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--brown-medium);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            background: var(--brown-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(184, 156, 122, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--brown-dark);
+            padding: 1rem 2.5rem;
+            border: 2px solid var(--brown-light);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: var(--brown-light);
+            transform: translateY(-3px);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 2rem;
+            background: var(--white);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--brown-dark);
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--cream);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 1px solid var(--brown-light);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--brown-medium);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: var(--brown-dark);
+            margin-bottom: 1rem;
+        }
+
+        /* Company Profile */
+        .company-profile {
+            padding: 80px 2rem;
+            background: var(--cream);
+        }
+
+        .profile-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .profile-content h2 {
+            font-size: 2.5rem;
+            color: var(--brown-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-content p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .profile-image {
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 2rem;
+            background: var(--white);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            color: var(--brown-dark);
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--brown-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--brown-dark);
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .contact-form {
+            background: var(--cream);
+            padding: 2.5rem;
+            border-radius: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--brown-dark);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--brown-light);
+            border-radius: 10px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--brown-medium);
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--brown-medium);
+            color: var(--white);
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: var(--brown-dark);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--brown-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-container,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">WPR Agency</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#profile">Profil</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <a href="#contact" class="cta-btn">Hubungi Kami</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Jasa Press Release Profesional & SEO Friendly</h1>
+        <p>Tingkatkan Brand Awareness bisnis anda serta bangun personal branding dengan artikel berita berkualitas di media terpercaya nasional dan internasional</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">
+                <i class="fab fa-whatsapp"></i>
+                Pesan Sekarang
+            </a>
+            <a href="#services" class="btn-secondary">Lihat Layanan</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Layanan Kami</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h3>Press Release</h3>
+                <p>Penulisan dan distribusi Press Release ke 200+ media terpercaya dengan jaminan tayang seumur hidup</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <h3>Artikel Berita</h3>
+                <p>Artikel SEO-friendly yang dioptimasi untuk meningkatkan traffic dan authority website sehingga berita akan lebih mudah Top Trending</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Distribusi Media</h3>
+                <p>Distribusi ke portal Media Besar Nasional sangat cocok untuk anda Brand atau Tokoh Publim untuk meningkatkan kreadibilitas profil anda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Profile -->
+    <section id="profile" class="company-profile">
+        <div class="profile-container">
+            <div class="profile-content">
+                <h2>Tentang WPR Agency </h2>
+                <p>Kami adalah agensi digital marketing spesialis press release dengan pengalaman 3+ tahun melayani 120+ klien dari berbagai industri. Tim kami terdiri dari jurnalis berpengalaman dan content writer profesional yang memahami algoritma media dan SEO.</p>
+                <p><strong>Jaminan Kami:</strong></p>
+                <ul style="color: #666; margin: 1rem 0; padding-left: 1.5rem;">
+                    <li>Artikel tayang di media terpercaya dan sudah terdaftar Dewan Pers</li>
+                    <li>Gratis penulisan naskah dari tim kami<li>
+                    <li>Penulisan oleh jurnalis profesional sehingga berita yang akan naik di jamin berkualitas</li>
+                    <li>Bebas revisi Draft Artikel yang akan tayang hingga anda mendapatkan kepuasan maksimal</li>
+                    <li>Harga terjamin termurah dari tempat lain mulai dari Rp 250.000</li>
+                </ul>
+            </div>
+            <div class="profile-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team WPR Agency ">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3><i class="fas fa-phone-alt"></i> Kontak Cepat</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <strong>Jakarta, Indonesia</strong>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <strong>syawalianadha@gmail.com</strong>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <strong>24/7 Support On </strong>
+                    </div>
+                </div>
+                <a href="https://wa.me/6288293530133" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Chat WhatsApp
+                </a>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Pesan</label>
+                        <textarea rows="5" placeholder="Ceritakan kebutuhan press release Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 WPR Agency . Semua hak dilindungi. | Jasa Press Release Terbaik Indonesia</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim. Kami akan hubungi anda secepatnya, jika belum ada jawaban mohon chat kami di nomor WhatsApp yang tersedia');
+            this.reset();
+        });
+
+        // WhatsApp click animation
+        document.querySelector('.whatsapp-btn').addEventListener('click', function() {
+            // Open WhatsApp
+        });
+    </script>
+</body>
+</html>
